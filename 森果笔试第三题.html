@@ -12,55 +12,10 @@
         function getRes(t){
             var arr = ['aa', 'bb', 'cc'];
             var result = [];
-            // var type = t == 'a' ? 
             result = arr.filter(item => item != 'bb' && item != 'dd' && item == t);
-
             return result;
         }
-        function A(a){
-            var arr = ['aa', 'bb', 'cc'];
-            var result = [];
-
-            for(var i = 0; i < arr.length; i++){
-                if(arr[i] != 'bb'){
-                    if(arr[i] != 'dd'){
-                        if(arr[i] == a){
-                            result.push(arr[i]);
-                        }
-                    }
-                }
-            }
-
-            return result;
-        }
-
-        function B(b){
-            var arr = ['aa', 'bb', 'cc'];
-            var result = [];
-
-            for(var i = 0; i < arr.length; i++){
-                if(arr[i] != 'bb'){
-                    if(arr[i] != 'dd'){
-                        if(arr[i] == b){
-                            result.push(arr[i]);
-                        }
-                    }
-                }
-            }
-
-            return result;
-        }
-
-        function go(type){
-            if(type == 'a'){
-                return A(type);
-            }else{
-                return B(type);
-            }
-        }
-
-        console.log(go('a'));
-
+        
         console.log(getRes('aa'));
     </script>
 </body>
