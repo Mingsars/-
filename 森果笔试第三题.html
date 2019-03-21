@@ -12,11 +12,11 @@
         function getRes(type){
             var arr = ['aa', 'bb', 'cc'];
             var result = [];
-            result = arr.filter(item => item != 'bb' && item != 'dd' && item == type);
+            result = arr.filter(item => item == type && item != 'bb' && item != 'dd');
             return result;
         }
         
-        console.log(getRes('aa'));
+        console.log(getRes('a'));
     </script>
 </body>
 </html>
